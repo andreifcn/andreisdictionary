@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Andrei's Dictionary</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+
+    </style>
+
+    <nav>
+      <div id="navbar">
+        <a href="http://127.0.0.1:5500/?">Andrei's dictionary</a>
+      </div>
+    </nav>
+
+  </head>
+
+  <body>
+
+    <main>
+      <div id="action-panel">
+        <form>
+          <br><br>
+          <label for="search-box" style="color: white;">Enter a word...</label>
+          <br><br>
+          <input type="text" id="search-box" pattern="[A-Za-z]" required>
+          <br><br>
+          <input type="button" class="button" value="Add word" onclick="checkWordList();">
+        </form>
+      </div>
+
+      <div id="search-result">
+        <h2>Word is already on the list!</h2>
+      </div>
+
+      <div id="word-box">
+        <ul id="word-list">
+          <li>caine</li>
+        </ul>
+      </div>
+
+      <script src="main.js"></script>
+    </main>
+
+    <footer>
+    </footer>
+
+  </body>
+
+</html>
